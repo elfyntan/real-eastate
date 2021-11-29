@@ -1,0 +1,22 @@
+body, html {
+    scroll-behavior: smooth!important;
+    position: relative;
+}
+.font-weight5{
+    font-weight: 500!important;
+}
+.font-weight6{
+    font-weight: 600!important;
+}
+.font-weight7{
+    font-weight: 700!important;
+}
+.font-weight8{
+    font-weight: 800!important;
+}
+.font-weight9{
+    font-weight: 900!important;
+}
+.bg-b{
+    background-color: #4764A0;
+}

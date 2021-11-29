@@ -1,0 +1,31 @@
+img{
+    height: auto;
+    width: 100%;
+}
+.bg-gray{
+    background-color: rgb(233, 230, 230);
+}
+.image{
+    height: 255px ;
+    width: 100%;
+}
+.caption{
+    height: 65px;
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome {
+        height: 550px;
+    }
+    .welcome-left{
+        height: 550px;
+    }
+    
+.image{
+    height: auto ;
+    width: 100%;
+}
+.caption{
+    height: auto;
+}
+  }

@@ -1,0 +1,239 @@
+
+
+.section {
+	min-height: 500px;
+	position: relative;
+	
+	font-family: sans-serif, arial;
+	margin: 0;
+}
+
+.txt-shadow1{
+    background-color: #565656;
+    text-shadow: 2px 2px 3px #000;
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+.txt-shadow{
+    font: bold 45px arial, sans-serif;
+  background-color: #565656;
+  text-shadow: 2px 2px 3px #000;
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+h1, p {
+	margin: 0;
+	font-family: sans-serif, arial;
+	font-weight: bold;
+}
+
+.text-wr {
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+#section1 {
+	min-height: 425px;
+}
+
+#section2 {
+	background: #4bbfc3;
+	color: #81d2d5;
+}
+
+#section3 {
+	background: #283044;
+	color: #686e7c;
+}
+
+#section4 {
+	background: #ebf5ee;
+	color: #aeb9b9;
+}
+
+h1 {
+	font-size: 50px;
+	margin-bottom: 25px;
+}
+
+.title-top {
+	font-size: 60px;
+	padding-bottom: 30px;
+}
+
+.title-bottom {
+	font-size: 30px;
+}
+
+.title-tx {
+	font-size: 20px;
+	opacity: 0.8;
+}
+
+
+
+.nav a {
+	padding: 7px 20px;
+	border-radius: 7px;
+	margin-right: 10px;
+	background: rgba(255, 255, 255, 0.5);
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif, arial;
+	font-weight: 100;
+}
+
+.nav a.active {
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+.nav a:hover {
+	background: rgba(255, 255, 255, 0.7);
+}
+.fork-wr{
+  position:absolute;
+}
+
+.fork-wr span {
+	position: fixed;
+	z-index: 99;
+	top: 20px;
+	right: 0;
+	border: 0;
+  transform: rotate(25deg);
+  color: white;
+  background-color: #565656;
+  text-shadow: 2px 2px 3px #000;
+  -webkit-background-clip: text;
+    -moz-background-clip: text;
+          background-clip: text;
+}
+img{
+    height: auto;
+    width: 100%;
+}
+.home-bg{
+    background-image: url('../assets/images/bg6.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.search-bg{
+    background-color: #e8e9eb;
+}
+.find-label{
+    color: #a0a1a0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .home-bg{
+        background-image: url('../assets/images/bg6.jpg');
+      background-repeat: no-repeat;
+      height: auto;
+      width: 100%;
+    }
+    
+  .txt-shadow{
+    font: bold 33px arial, sans-serif;
+  background-color: #565656;
+  text-shadow: 2px 2px 3px #000;
+  -webkit-background-clip: text;
+    -moz-background-clip: text;
+          background-clip: text;
+  }
+    .find-label{
+        display: none;
+    }
+    .find-inp::placeholder{
+        content: "Find a home";
+    }
+  }
+  .btn-learn1{
+      padding: 15px 25px;
+  }
+  .btn-search{
+      padding-left: 15px;
+      padding-right: 15px;
+      background-color: #2E7662;
+      
+  }
+  
+
+  
+.scrolltop-wrap {
+    box-sizing: border-box;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    bottom: 0;
+    pointer-events: none;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+  }
+  .scrolltop-wrap #scrolltop-bg {
+    fill: #4764A0;
+  }
+  .scrolltop-wrap #scrolltop-arrow {
+    fill: white;
+  }
+  .scrolltop-wrap a:hover #scrolltop-bg {
+    fill: #2990ff;
+  }
+  .scrolltop-wrap a:hover #scrolltop-arrow {
+    fill: white;
+  }
+  @supports (-moz-appearance: meterbar) {
+    .scrolltop-wrap {
+      clip: rect(0, 3rem, auto, 0);
+    }
+  }
+  .scrolltop-wrap a {
+    position: fixed;
+    position: sticky;
+    top: -5rem;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: -5rem;
+    transform: translateY(100vh);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    display: inline-block;
+    text-decoration: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    pointer-events: all;
+    outline: none;
+    overflow: hidden;
+  }
+  .scrolltop-wrap a svg {
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+  }
+  .scrolltop-wrap a svg path {
+    transition: all 0.1s;
+  }
+  .scrolltop-wrap a #scrolltop-arrow {
+    transform: scale(0.66);
+    transform-origin: center;
+  }
+  @media print {
+    .scrolltop-wrap {
+      display: none !important;
+    }
+  }

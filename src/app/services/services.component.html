@@ -1,0 +1,13 @@
+<div class="row bg-white">
+    <div class="col-md-3 p-2" *ngFor="let property of properties;" >
+        <div  class=" bg-gray">
+            <div class="image" >
+                <img class="img-fluid img-responsive rounded-0 " [src]=" '/assets/properties/' + property.image">
+            </div>
+            <div class="caption p-2 ">
+                <div class=""><b>{{property.description}} ({{property.n|uppercase}}, {{property.size}}{{property.units}}<sup>2</sup>)</b></div>
+                <div class="">{{property.price | currency}}</div>
+            </div>
+        </div>
+    </div>
+</div>

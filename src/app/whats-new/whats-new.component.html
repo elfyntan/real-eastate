@@ -1,0 +1,20 @@
+<div class="container">
+        <div class="p-5"><h3 class="text-center font-weight9">What's new</h3></div>
+        <div class="row">
+            <div class="col-md-6 p-2" *ngFor="let item of whats_new">
+                <div class="d-flex justify-content-center ">
+                    <div class=" d-flex flex-column justify-content-center date">
+                        <div class="day">{{item.date | date:'d'}}</div>
+                        <div class="">{{item.date | date:'MMM'}}</div>
+                    </div>
+                    <div class="container">
+                        <div>
+                            <h4><a class="font-weight9" style="text-decoration: none;" href="#">{{item.title}}</a></h4>
+                            <p class="" class="text-secondary"> {{item.body}}</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
